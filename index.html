@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
-  <title>Polityka prywatności — OptiWay Relay</title>
+  <title>Privacy Policy — OptiWay Relay</title>
   <style>
     :root {
       --bg: #ffffff;
@@ -62,105 +62,108 @@
 </head>
 <body>
   <main class="wrap">
-    <p class="lang"><strong>Polski</strong> · <a href="en.html">English</a></p>
-    <h1>Polityka prywatności — rozszerzenie „OptiWay Relay"</h1>
+    <p class="lang"><a href="pl.html">Polski</a> · <strong>English</strong></p>
+    <h1>Privacy Policy — “OptiWay Relay” extension</h1>
 
     <div class="meta">
-      <p><strong>Data wejścia w życie:</strong> 24.07.2026</p>
-      <p><strong>Administrator danych:</strong> OptiWay Konrad Rybkowski, ul. Korpusu Ochrony
-        Pogranicza 2 lok. U6A, 20-819 Lublin, NIP 7133039772, REGON 543258525.</p>
-      <p><strong>Kontakt:</strong> <a href="mailto:office@optiway-logistics.com">office@optiway-logistics.com</a></p>
+      <p><strong>Effective date:</strong> 24 July 2026</p>
+      <p><strong>Data controller:</strong> OptiWay Konrad Rybkowski, ul. Korpusu Ochrony Pogranicza 2
+        lok. U6A, 20-819 Lublin, Poland; Tax ID (NIP) 7133039772; Business Reg. No. (REGON) 543258525.</p>
+      <p><strong>Contact:</strong> <a href="mailto:office@optiway-logistics.com">office@optiway-logistics.com</a></p>
+      <p class="lead">This is a courtesy English translation. In case of any discrepancy, the Polish
+        version prevails.</p>
     </div>
 
-    <p class="lead">Rozszerzenie „OptiWay Relay" („rozszerzenie") umożliwia przeniesienie zlecenia
-      transportowego z platformy Amazon Relay do systemu OptiwayTMS jednym kliknięciem oraz oznacza,
-      które loady są już w OptiwayTMS. Niniejsza polityka opisuje, jakie dane rozszerzenie przetwarza,
-      w jakim celu i komu je udostępnia.</p>
+    <p class="lead">The “OptiWay Relay” extension (the “extension”) lets you transfer a transport order
+      from the Amazon Relay platform to the OptiwayTMS system with one click, and marks which loads are
+      already in OptiwayTMS. This policy describes what data the extension processes, for what purpose,
+      and with whom it is shared.</p>
 
-    <h2>1. Cel rozszerzenia (single purpose)</h2>
-    <p>Rozszerzenie ma <strong>jeden cel</strong>: przenoszenie danych zleceń z Amazon Relay do
-      OptiwayTMS i sygnalizowanie, które loady już się w OptiwayTMS znajdują. Rozszerzenie
-      <strong>nie</strong> służy do reklamy, śledzenia zachowań ani profilowania.</p>
+    <h2>1. Purpose of the extension (single purpose)</h2>
+    <p>The extension has a <strong>single purpose</strong>: transferring order data from Amazon Relay
+      to OptiwayTMS and indicating which loads are already present in OptiwayTMS. The extension does
+      <strong>not</strong> serve advertising, behavioral tracking, or profiling.</p>
 
-    <h2>2. Jakie dane przetwarzamy</h2>
-    <p><strong>a) Dane logowania do OptiwayTMS.</strong> Adres e-mail i hasło, które podajesz
-      w panelu rozszerzenia, są używane <strong>wyłącznie</strong> do zalogowania Cię do Twojego
-      konta OptiwayTMS (uwierzytelnienie). Hasło nie jest przechowywane przez rozszerzenie — służy
-      jednorazowo do uzyskania tokenu sesji.</p>
-    <p><strong>b) Tokeny sesji.</strong> Po zalogowaniu rozszerzenie przechowuje tokeny sesji
-      (dostępowy i odświeżający) <strong>wyłącznie w chronionym kontekście service workera</strong>
-      rozszerzenia (nie są dostępne dla stron internetowych ani zapisywane w treści stron). Służą do
-      autoryzacji zapisu zleceń do OptiwayTMS.</p>
-    <p><strong>c) Dane zleceń z Amazon Relay.</strong> Gdy korzystasz z rozszerzenia na stronie
-      Amazon Relay, odczytuje ono dane widocznego loadu (m.in. identyfikator loadu, typ zlecenia,
-      miejsca i terminy załadunku/rozładunku) i — na Twoje wyraźne działanie (kliknięcie „Wyślij do
-      TMS") — przesyła je do OptiwayTMS jako nowe zlecenie. Rozszerzenie odczytuje też, które loady
-      są już w OptiwayTMS, aby je oznaczyć.</p>
-    <p><strong>d) Dane diagnostyczne (błędy).</strong> W przypadku błędu rozszerzenie może wysłać do
-      usługi monitoringu (Sentry) <strong>ograniczony, zredagowany</strong> komunikat błędu ze stałej
-      listy kodów oraz <strong>nieprzezroczysty identyfikator (UUID)</strong> Twojego konta do
-      korelacji. <strong>Nie wysyłamy</strong> przy tym Twojego adresu e-mail ani surowych danych ze
-      strony Amazon Relay. Monitoring błędów można wyłączyć (brak konfiguracji DSN).</p>
+    <h2>2. What data we process</h2>
+    <p><strong>a) OptiwayTMS sign-in credentials.</strong> The email address and password you enter in
+      the extension panel are used <strong>solely</strong> to sign you in to your OptiwayTMS account
+      (authentication). The password is not stored by the extension — it is used once to obtain a
+      session token.</p>
+    <p><strong>b) Session tokens.</strong> After sign-in the extension stores session tokens (access
+      and refresh) <strong>only within the extension's protected service-worker context</strong> (not
+      accessible to web pages, not written into page content). They are used to authorize writing
+      orders to OptiwayTMS.</p>
+    <p><strong>c) Order data from Amazon Relay.</strong> When you use the extension on the Amazon Relay
+      site, it reads the data of the visible load (e.g. load identifier, order type, pickup/delivery
+      locations and times) and — upon your explicit action (clicking “Send to TMS”) — sends it to
+      OptiwayTMS as a new order. The extension also reads which loads already exist in OptiwayTMS in
+      order to mark them.</p>
+    <p><strong>d) Diagnostic data (errors).</strong> In case of an error, the extension may send to a
+      monitoring service (Sentry) a <strong>limited, redacted</strong> error message from a fixed list
+      of codes, plus an <strong>opaque identifier (UUID)</strong> of your account for correlation. We
+      do <strong>not</strong> send your email address or raw data from the Amazon Relay page. Error
+      monitoring can be disabled (no DSN configured).</p>
 
-    <h2>3. Komu udostępniamy dane (odbiorcy)</h2>
-    <p>Dane trafiają <strong>wyłącznie</strong> do infrastruktury obsługującej OptiwayTMS oraz do
-      procesora monitoringu:</p>
+    <h2>3. Who we share data with (recipients)</h2>
+    <p>Data is sent <strong>only</strong> to the infrastructure serving OptiwayTMS and to the
+      monitoring processor:</p>
     <ul>
-      <li><strong>OptiwayTMS</strong> (backend aplikacji) — Twój system docelowy, do którego
-        zapisywane jest zlecenie.</li>
-      <li><strong>Usługa uwierzytelniania (self-hosted Supabase)</strong> — weryfikacja logowania
-        i wydanie tokenu sesji.</li>
-      <li><strong>Sentry</strong> — monitoring błędów (wyłącznie zredagowane kody błędów + UUID,
-        jak w pkt. 2d).</li>
+      <li><strong>OptiwayTMS</strong> (application backend) — your destination system, where the order
+        is saved.</li>
+      <li><strong>Authentication service (self-hosted Supabase)</strong> — verifies sign-in and issues
+        the session token.</li>
+      <li><strong>Sentry</strong> — error monitoring (only redacted error codes + UUID, as in
+        point 2d).</li>
     </ul>
-    <p><strong>Nie sprzedajemy</strong> danych, <strong>nie udostępniamy</strong> ich brokerom danych
-      ani reklamodawcom i <strong>nie wykorzystujemy</strong> ich do celów niezwiązanych z jedynym
-      celem rozszerzenia (pkt. 1).</p>
+    <p>We do <strong>not sell</strong> data, do <strong>not share</strong> it with data brokers or
+      advertisers, and do <strong>not use</strong> it for purposes unrelated to the extension's single
+      purpose (point 1).</p>
 
-    <h2>4. Przechowywanie i usuwanie</h2>
-    <p>Rozszerzenie samo w sobie <strong>nie przechowuje trwale</strong> żadnych danych — jest
-      narzędziem transferu.</p>
+    <h2>4. Storage and deletion</h2>
+    <p>The extension itself does <strong>not permanently store</strong> any data — it is a transfer
+      tool.</p>
     <ul>
-      <li><strong>Dane logowania i tokeny sesji</strong> — przechowywane lokalnie w przeglądarce
-        wyłącznie na czas aktywnej sesji; wylogowanie lub odinstalowanie rozszerzenia usuwa je
-        z urządzenia. Brak trwałej retencji po stronie rozszerzenia.</li>
-      <li><strong>Dane zleceń</strong> — po przesłaniu żyją w OptiwayTMS (nie w rozszerzeniu)
-        i podlegają zasadom przechowywania OptiwayTMS: 5 lat.</li>
-      <li><strong>Dane diagnostyczne (Sentry)</strong> — zredagowane kody błędów + UUID,
-        przechowywane zgodnie z polityką retencji Sentry przez 30 dni.</li>
+      <li><strong>Sign-in credentials and session tokens</strong> — stored locally in the browser only
+        for the duration of the active session; signing out or uninstalling the extension removes them
+        from the device. No permanent retention on the extension side.</li>
+      <li><strong>Order data</strong> — once sent, it resides in OptiwayTMS (not in the extension) and
+        is subject to OptiwayTMS retention rules: 5 years.</li>
+      <li><strong>Diagnostic data (Sentry)</strong> — redacted error codes + UUID, retained according
+        to Sentry's retention policy for 30 days.</li>
     </ul>
 
-    <h2>5. Twoje prawa</h2>
-    <p>W zakresie przewidzianym przez Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679
-      (RODO) przysługują Ci następujące prawa:</p>
+    <h2>5. Your rights</h2>
+    <p>Within the scope provided by Regulation (EU) 2016/679 of the European Parliament and of the
+      Council (GDPR), you have the following rights:</p>
     <ul>
-      <li>prawo dostępu do danych oraz otrzymania ich kopii — art. 15 RODO;</li>
-      <li>prawo do sprostowania danych — art. 16 RODO;</li>
-      <li>prawo do usunięcia danych („prawo do bycia zapomnianym") — art. 17 RODO;</li>
-      <li>prawo do ograniczenia przetwarzania — art. 18 RODO;</li>
-      <li>prawo do przenoszenia danych, jeżeli ma zastosowanie — art. 20 RODO;</li>
-      <li>prawo sprzeciwu wobec przetwarzania, jeżeli ma zastosowanie — art. 21 RODO;</li>
-      <li>prawo do niepodlegania decyzji opartej wyłącznie na zautomatyzowanym przetwarzaniu, w tym
-        profilowaniu, jeżeli taka decyzja wywołuje skutki prawne lub podobnie istotnie na Ciebie
-        wpływa — art. 22 RODO.</li>
+      <li>right of access to your data and to obtain a copy — Art. 15 GDPR;</li>
+      <li>right to rectification — Art. 16 GDPR;</li>
+      <li>right to erasure (“right to be forgotten”) — Art. 17 GDPR;</li>
+      <li>right to restriction of processing — Art. 18 GDPR;</li>
+      <li>right to data portability, where applicable — Art. 20 GDPR;</li>
+      <li>right to object to processing, where applicable — Art. 21 GDPR;</li>
+      <li>right not to be subject to a decision based solely on automated processing, including
+        profiling, where such a decision produces legal effects or similarly significantly affects you
+        — Art. 22 GDPR.</li>
     </ul>
-    <p>Żądanie dotyczące realizacji praw możesz wysłać na adres:
-      <a href="mailto:office@optiway-logistics.com">office@optiway-logistics.com</a>. Administrator
-      może poprosić o informacje niezbędne do potwierdzenia Twojej tożsamości oraz identyfikacji
-      danych, których dotyczy żądanie. Odpowiadamy bez zbędnej zwłoki, zgodnie z art. 12 RODO.</p>
-    <p>Masz również prawo wnieść skargę do Prezesa Urzędu Ochrony Danych Osobowych, jeżeli uważasz,
-      że przetwarzanie Twoich danych narusza RODO — art. 77 RODO.</p>
+    <p>To exercise your rights, write to:
+      <a href="mailto:office@optiway-logistics.com">office@optiway-logistics.com</a>. The controller
+      may request information necessary to confirm your identity and identify the data concerned by the
+      request. We respond without undue delay, in accordance with Art. 12 GDPR.</p>
+    <p>You also have the right to lodge a complaint with the President of the Personal Data Protection
+      Office (Prezes Urzędu Ochrony Danych Osobowych) in Poland if you believe the processing of your
+      data infringes the GDPR — Art. 77 GDPR.</p>
 
-    <h2>6. Zmiany polityki</h2>
-    <p>O istotnych zmianach niniejszej polityki poinformujemy poprzez aktualizację tej strony oraz,
-      jeśli to zasadne, komunikat w rozszerzeniu. Data ostatniej aktualizacji widnieje poniżej.</p>
+    <h2>6. Changes to this policy</h2>
+    <p>We will announce material changes to this policy by updating this page and, where appropriate,
+      via a message in the extension. The date of the last update is shown below.</p>
 
-    <h2>7. Kontakt</h2>
-    <p>W sprawach prywatności: <a href="mailto:office@optiway-logistics.com">office@optiway-logistics.com</a>.
-      Administrator danych: OptiWay Konrad Rybkowski, ul. Korpusu Ochrony Pogranicza 2 lok. U6A,
-      20-819 Lublin, NIP 7133039772.</p>
+    <h2>7. Contact</h2>
+    <p>For privacy matters: <a href="mailto:office@optiway-logistics.com">office@optiway-logistics.com</a>.
+      Data controller: OptiWay Konrad Rybkowski, ul. Korpusu Ochrony Pogranicza 2 lok. U6A, 20-819
+      Lublin, Poland; Tax ID (NIP) 7133039772.</p>
 
-    <footer>Ostatnia aktualizacja: 24.07.2026 · OptiWay Konrad Rybkowski</footer>
+    <footer>Last updated: 24 July 2026 · OptiWay Konrad Rybkowski</footer>
   </main>
 </body>
 </html>
